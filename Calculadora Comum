@@ -15,10 +15,10 @@ int main()
 {
     char resp = 's';
     
-    do { 
+    do {
         menu();
         cout << "Escolha uma opção \n\n";
-        cout << "[1] Adição \n[2] Subtração \n[3] Multiplicacão \n[4] Divisão \n[5] Sair" << endl;
+        cout << "[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Sair" << endl;
         
         int op;
         
@@ -97,12 +97,10 @@ int main()
             cin >> resp;
             cout << endl;
             system("clear");
-            
         } else if (op == 5) {
             cout << "Volte sempre!";
             resp = 'n';
-            
-        } cout << "Volte sempre!";   
+        }
     } while (resp != 'n' && resp != 'N');
     
     return 0;
