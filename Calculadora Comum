@@ -18,7 +18,7 @@ int main()
     do { 
         menu();
         cout << "Escolha uma opção \n\n";
-        cout << "[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Sair" << endl;
+        cout << "[1] Adição \n[2] Subtração \n[3] Multiplicacão \n[4] Divisão \n[5] Sair" << endl;
         
         int op;
         
