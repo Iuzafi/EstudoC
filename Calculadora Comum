@@ -4,7 +4,7 @@
 
 using namespace std;
 
-float menu() 
+float menu()  
 {
     cout <<"============ \n" << "CALCULADORA \n" << "============" << endl;
     return 0;
