@@ -1,0 +1,109 @@
+/* Calculadora Comum */
+
+#include <iostream>
+#include <locale.h>
+
+using namespace std;
+
+float menu() 
+{
+    cout <<"============ \n" << "CALCULADORA \n" << "============" << endl;
+    return 0;
+}
+
+int main()
+{
+    char resp = 's';
+    
+    do {
+        menu();
+        cout << "Escolha uma opção \n\n";
+        cout << "[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Sair" << endl;
+        
+        int op;
+        
+        cin >> op;
+        
+        system("clear");
+        
+        if (op == 1) {
+            float v1, v2;
+            
+            menu();
+            cout << " ADICAO \n\n";
+            cout << "Digite o primeiro valor: \n";
+            cin >> v1;
+            cout << "Digite o segundo valor: \n";
+            cin >> v2;
+            system ("clear");
+            
+            menu();
+            cout << "\nResultado\n" << v1 << " + " << v2 <<": " << v1 + v2 << endl;
+            cout << "\nDeseja continuar? [s/n]" << endl;
+            cin >> resp;
+            cout << endl;
+            system("clear");
+            
+        } else if (op == 2) {
+            float v1, v2;
+            
+            menu();
+            cout << " SUBTRACAO \n\n";
+            cout << "Digite o primeiro valor: \n";
+            cin >> v1;
+            cout << "Digite o segundo valor: \n";
+            cin >> v2;
+            system ("clear");
+            
+            menu();
+            cout << "\nResultado\n" << v1 << " - " << v2 <<": " << v1 - v2 << endl;
+            cout << "\nDeseja continuar? [s/n]" << endl;
+            cin >> resp;
+            cout << endl;
+            system("clear");
+            
+        } else if (op == 3) {
+            float v1, v2;
+            
+            menu();
+            cout << " MULTIPLICACAO \n\n";
+            cout << "Digite o primeiro valor: \n";
+            cin >> v1;
+            cout << "Digite o segundo valor: \n";
+            cin >> v2;
+            system ("clear");
+            
+            menu();
+            cout << "\nResultado\n" << v1 << " * " << v2 <<": " << v1 * v2 << endl;
+            cout << "\nDeseja continuar? [s/n]" << endl;
+            cin >> resp;
+            cout << endl;
+            system("clear");
+            
+        } else if (op == 4) {
+            float v1, v2;
+            
+            menu();
+            cout << " DIVISAO \n\n";
+            cout << "Digite o primeiro valor: \n";
+            cin >> v1;
+            cout << "Digite o segundo valor: \n";
+            cin >> v2;
+            system ("clear");
+            
+            menu();
+            cout << "\nResultado\n" << v1 << " / " << v2 <<": " << v1 / v2 << endl;
+            cout << "\nDeseja continuar? [s/n]" << endl;
+            cin >> resp;
+            cout << endl;
+            system("clear");
+            
+        } else if (op == 5) {
+            cout << "Volte sempre!";
+            resp = 'n';
+            
+        } cout << "Volte sempre!";   
+    } while (resp != 'n' && resp != 'N');
+    
+    return 0;
+}
