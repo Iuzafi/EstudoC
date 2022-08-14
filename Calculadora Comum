@@ -97,6 +97,7 @@ int main()
             cin >> resp;
             cout << endl;
             system("clear");
+            
         } else if (op == 5) {
             cout << "Volte sempre!";
             resp = 'n';
